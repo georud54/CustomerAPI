@@ -4,7 +4,7 @@ A REST Web API for creating, editing, searching and deleting Customer records
 
 ### Description
 
-The project is implemented in .Net 6 and demonstrate good design and coding practices
+The project is implemented in .Net 6 to demonstrate concepts and good practices
 
 ### Dependencies
 * .Net 6 developer environment
