@@ -18,12 +18,12 @@ namespace Customer.Services
             return await _customerRepository.GetByName(searchTerm);
         }
 
-        public async Task<CustomerDto> GetById(int id)
+        public async Task<CustomerDto?> GetById(int id)
         {
             return await _customerRepository.GetById(id);
         }
 
-        public async Task<CustomerDto> Create(CustomerDto newCustomer)
+        public async Task<CustomerDto?> Create(CustomerDto newCustomer)
         {
             // Validating not an existing record and all fields have a value
             if (!CheckFields(newCustomer, true))

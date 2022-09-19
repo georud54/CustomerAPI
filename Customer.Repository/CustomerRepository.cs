@@ -25,12 +25,12 @@ namespace Customer.Repository
                 .ToListAsync();
         }
 
-        public async Task<CustomerDto> GetById(int id)
+        public async Task<CustomerDto?> GetById(int id)
         {
             return await _customerContext.Customers.Where(c => c.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<CustomerDto> Create(CustomerDto newCustomer)
+        public async Task<CustomerDto?> Create(CustomerDto newCustomer)
         {
             if (newCustomer.Id != 0 || _customerContext.Customers.Any(c => c.Id == newCustomer.Id))
             {

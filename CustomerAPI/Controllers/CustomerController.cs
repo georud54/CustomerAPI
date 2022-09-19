@@ -15,6 +15,11 @@ namespace CustomerAPI.Controllers
         private readonly ILogger<CustomerController> _logger;
         private readonly ICustomerService _customerService;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="logger">ILogger CustomerController</param>
+        /// <param name="customerService">ICustomerService</param>
         public CustomerController(ILogger<CustomerController> logger, ICustomerService customerService)
         {
             _logger = logger;
